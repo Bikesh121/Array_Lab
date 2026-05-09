@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
 	int i,n;
-	float sum=0.0,average;
+	float sum=0.0;
 	
 	printf("Enter the number of days you want to calculate: ");
 	scanf("%d", &n);
@@ -15,8 +15,7 @@ int main(){
 		sum += day[i];
 	}
 	
-	average = sum/n;
-	printf("\nThe average temperature is: %.2f", average);
+	printf("\nThe sum of the temperature is: %.2f", sum);
 	
 	return 0;
 }
